@@ -16,7 +16,7 @@ date_default_timezone_set('Asia/Kolkata');
 
 // ================= CONFIG =================
 $TO_EMAIL   = 'harshkumar115@gmail.com';
-$FROM_EMAIL = 'harshkumar115@gmail.com';   // MUST be a real mailbox on the SAME domain this file is hosted on
+$FROM_EMAIL = 'harsh.kanojia03@gmail.com';   // MUST be a real mailbox on the SAME domain this file is hosted on
 $FROM_NAME  = 'Online Application';
 $SUBJECT    = 'New Online Application';
 
