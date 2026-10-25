@@ -1,0 +1,18 @@
+# Angular SPA fallback for Apache (Hostinger hPanel / cPanel hosting).
+# Any request that isn't a real file or folder gets served index.html,
+# so Angular's client-side router can handle deep links and refreshes
+# (e.g. /book, /admin/login, /partner/dashboard).
+#
+# Requests to /backend/... are untouched because that folder/files
+# actually exist on disk, so this rule never applies to them.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteRule ^index\.html$ - [L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
